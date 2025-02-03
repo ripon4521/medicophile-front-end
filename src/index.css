@@ -1,2 +1,18 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Rancho&display=swap');
 @import "tailwindcss";
 @plugin "daisyui";
+
+
+body {
+    font-family: 'Inter', sans-serif;
+  }
+  @keyframes moveCar {
+    0% {
+      transform: translateX(-100px); /* Start off the left side */
+    }
+    100% {
+      transform: translateX(100vw); /* Move off to the right */
+    }
+  }
+  
