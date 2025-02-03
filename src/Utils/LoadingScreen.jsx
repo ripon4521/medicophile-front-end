@@ -22,7 +22,7 @@ const LoadingScreen = () => {
         <img 
           src={logo} 
           alt="MD Taxi Logo" 
-          className="md:w-[500px] animate-[moveCar_1s_ease-in-out_forwards] " 
+          className="md:w-[500px] animate-[moveCar_1s_ease-in-out_forwards] w-40" 
         />
         
         {/* Conditionally Render Text after Logo Animation */}
