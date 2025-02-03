@@ -1,4 +1,4 @@
-import AiInput from "./AiInput"
+
 
 
 
@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-<AiInput/>
+<h1 className="text-2xl ">Hello World</h1>
     </>
   )
 }
