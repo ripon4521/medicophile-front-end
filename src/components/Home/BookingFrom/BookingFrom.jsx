@@ -44,7 +44,7 @@ const BookingFrom = () => {
             <div className="w-full md:w-[80%] relative">
                 <span>Passengers</span>
                 <GrUserManager
-                    className=" absolute mt-4 left-3 text-[1.2rem] text-[#777777]"/>
+                    className=" absolute mt-[18px] left-3 text-[1.2rem] text-[#777777]"/>
                 <input
                     type="text"
                     name="text"
