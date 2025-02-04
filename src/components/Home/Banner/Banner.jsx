@@ -11,7 +11,7 @@ const Banner = () => {
             <div
   className="hero lg:min-h-[700px] md:min-h-[400px] min-h-[300px]"
   style={{
-    backgroundImage: "url(https://upload.wikimedia.org/wikipedia/commons/f/fb/Leti%C5%A1t%C4%9B_Ruzyn%C4%9B%2C_termin%C3%A1l_1%2C_taxistanovi%C5%A1t%C4%9B.jpg)",
+    backgroundImage: "url(https://img.freepik.com/premium-photo/tips-choosing-reliable-taxi-service_1186366-157905.jpg)",
   }}>
   <div className="hero-overlay "></div>
   <div className="hero-content text-neutral-content text-center">
