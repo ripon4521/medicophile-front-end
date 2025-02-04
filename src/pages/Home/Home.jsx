@@ -1,3 +1,4 @@
+import AboutUs from "../../components/Home/AboutUs/AboutUs";
 import Banner from "../../components/Home/Banner/Banner";
 import BookingFrom from "../../components/Home/BookingFrom/BookingFrom";
 
@@ -8,6 +9,7 @@ const Home = () => {
         <div>
             <Banner/>
             <BookingFrom/>
+            <AboutUs/>
         </div>
     );
 };
