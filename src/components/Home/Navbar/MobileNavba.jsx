@@ -53,7 +53,7 @@ const MobileNavbar = ({ active }) => {
 
   return (
     <>
-      <div className="bg-amber-50 shadow">
+      <div className=" shadow">
         <nav
           className={`items-center flex md:hidden justify-between z-50 px-6  sticky top-0 transition-shadow ${
             shadow ? 'shadow-lg' : ''
@@ -146,9 +146,9 @@ const MobileNavbar = ({ active }) => {
               </li>
               <div className="flex items-center gap-[20px]">
                 {/* <CiSearch className='text-[1.5rem] cursor-pointer' /> */}
-                <button className="py-2 cursor-pointer px-6 border border-[#3B9DF8] text-[#3B9DF8] rounded-tr-[30px] rounded-bl-[30px] hover:bg-[#3B9DF8] hover:text-white font-bold transition-all duration-200">
-                  Book Now
-                </button>
+                <button className="py-2.5 px-6 border border-yellow-400 text-black rounded-tr-[30px] rounded-bl-[30px] hover:bg-yellow-400 hover:text-black font-bold transition-all duration-200">
+          Book Now
+        </button>
               </div>
             </ul>
           </div>
