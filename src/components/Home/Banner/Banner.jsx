@@ -7,7 +7,7 @@ import AnimatedButton from '../../../Shared/AnimatedButton';
 AOS.init();
 const Banner = () => {
     return (
-        <div>
+        <div className=''>
             <div
   className="hero lg:min-h-[700px] md:min-h-[400px] min-h-[300px]"
   style={{
@@ -17,7 +17,7 @@ const Banner = () => {
   <div className="hero-content text-neutral-content text-center">
     <div  className="">
     <h1  data-aos="fade-up"
-    data-aos-duration="1000"
+    data-aos-duration="2000"
      data-aos-anchor-placement="top-center"  style={{ fontFamily: 'Rancho, serif' }} className="md:text-7xl lg:text-9xl text-4xl flex gap-2 drop-shadow-md justify-center ">
     Welcome to 
 
@@ -33,7 +33,7 @@ const Banner = () => {
             </span> </h1>
     <h1   data-aos="fade-up"
      data-aos-offset="100"
-     data-aos-duration="500"
+     data-aos-duration="1000"
      data-aos-easing="ease-in-sine"  style={{ fontFamily: 'Rancho, serif' }} className=" text-xl lg:text-5xl md:text-4xl flex text-center justify-center items-center gap-2 drop-shadow-md"><MdAddCall/>Call Now: <span className="text-yellow-400">07783664574</span> </h1>
  
       <p data-aos="zoom-in"  data-aos-duration="1000" className="md:mb-5 mb-2 mt-2 max-w-4xl  mx-auto drop-shadow-md lg:text-xl md:text-[20px] text-xs  text-white">
