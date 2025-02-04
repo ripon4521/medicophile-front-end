@@ -85,7 +85,7 @@ const BookingFrom = () => {
                 />
             </div>
 
-           <button className="flex items-center gap-2 bg-yellow-400 text-black rounded-2xl px-4  justify-center w-full md:w-[80%] h-14 mt-6 font-bold drop-shadow-md text-xl cursor-pointer ">
+           <button className="flex items-center hover:gap-2 bg-yellow-400 text-black rounded-2xl px-4  justify-center w-full md:w-[80%] h-14 mt-6 font-bold drop-shadow-md text-xl cursor-pointer ">
             Book Taxi <FaLongArrowAltRight className=""/>
            </button>
 

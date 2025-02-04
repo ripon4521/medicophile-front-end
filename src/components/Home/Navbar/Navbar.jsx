@@ -19,7 +19,7 @@ const Navbar = () => {
   const handleLinkClick = () => setDropdownOpen(false);
 
   return (
-    <div className="bg-gray-50 shadow fixed w-full z-50 top-0 border-b border-gray-400 hidden lg:block">
+    <div className="bg-gray-50 shadow fixed w-full z-50 top-0  hidden lg:block">
       <nav className={`container mx-auto flex items-center justify-between  px-6 transition-shadow ${shadow ? '' : ''}`}>
         <Link to="/" className="flex items-center">
           <span

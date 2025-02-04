@@ -3,6 +3,7 @@ import 'aos/dist/aos.css';
 import { MdAddCall } from "react-icons/md";
 import Typewriter from 'typewriter-effect';
 import AnimatedButton from '../../../Shared/AnimatedButton';
+import { FaLongArrowAltRight } from 'react-icons/fa';
 
 AOS.init();
 const Banner = () => {
@@ -43,9 +44,11 @@ const Banner = () => {
       <div data-aos="fade-up"
      data-aos-duration="2000" className="flex items-center  drop-shadow-md justify-center">
           {/* <CiSearch className="text-[1.5rem] cursor-pointer" /> */}
-          <button className="md:px-6 md:py-3 px-2 py-2 bg-yellow-400 text-black font-bold drop-shadow-md rounded-md cursor-pointer md:text-xl text-xs">
-            Book Now
-          </button>
+               <button data-aos="fade-up"
+            data-aos-duration="2000" className="flex items-center hover:gap-2 bg-yellow-400 text-black rounded-2xl px-4  justify-center  h-14  font-bold drop-shadow-md text-xl cursor-pointer ">
+                                   Discover <FaLongArrowAltRight className=""/>
+                                  </button>
+       
         </div>
     </div>
   </div>
