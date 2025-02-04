@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { CiSearch } from 'react-icons/ci';
 import { AiOutlineMenu } from 'react-icons/ai';
 import { RxCross1 } from 'react-icons/rx';
 import logo from '../../../../public/Logo/MD Taxi.png';
+import { IoIosArrowDown } from 'react-icons/io';
 
 const MobileNavbar = ({ active }) => {
   const [shadow, setShadow] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false); 
 
   // Close the sidebar when clicking outside of it
   useEffect(() => {
@@ -41,9 +43,17 @@ const MobileNavbar = ({ active }) => {
     };
   }, []);
 
+  const handleDropdownClick = () => {
+    setDropdownOpen(!dropdownOpen); // Toggle dropdown visibility
+  };
+
+  const handleLinkClick = () => {
+    setDropdownOpen(false); // Close the dropdown when a link is clicked
+  };
+
   return (
     <>
-      <div className="bg-white shadow">
+      <div className="bg-amber-50 shadow">
         <nav
           className={`items-center flex md:hidden justify-between z-50 px-6  sticky top-0 transition-shadow ${
             shadow ? 'shadow-lg' : ''
@@ -89,9 +99,48 @@ const MobileNavbar = ({ active }) => {
               <li className={`${active === 2 ? 'text-primary font-[600]' : ''} navItem`}>
                 <Link to="/about">About Us</Link>
               </li>
-              <li className={`${active === 3 ? 'text-primary font-[600]' : ''} navItem`}>
-                <Link to="/services">Our Services</Link>
-              </li>
+                {/* Services Dropdown */}
+                      <li className="relative">
+                        <div
+                          className="font-inter text-base flex items-center gap-1 cursor-pointer"
+                          onClick={handleDropdownClick}
+                        >
+                          <span>Services</span>
+                          <IoIosArrowDown className={`transition-transform ${dropdownOpen ? 'rotate-180' : ''}`} />
+                        </div>
+            
+                        {dropdownOpen && (
+                          <ul className="absolute top-full left-0 bg-white shadow-lg mt-2 w-52 py-2 rounded">
+                            <li>
+                              <NavLink
+                                to="/service1"
+                                className="block px-4 py-2 text-gray-700 hover:bg-blue-500 hover:text-white"
+                                onClick={handleLinkClick}
+                              >
+                             Airport Transfers
+                              </NavLink>
+                            </li>
+                            <li>
+                              <NavLink
+                                to="/service2"
+                                className="block px-4 py-2 text-gray-700 hover:bg-blue-500 hover:text-white"
+                                onClick={handleLinkClick}
+                              >
+                              Local RidesWhether
+                              </NavLink>
+                            </li>
+                            <li>
+                              <NavLink
+                                to="/service3"
+                                className="block px-4 py-2 text-gray-700 hover:bg-blue-500 hover:text-white"
+                                onClick={handleLinkClick}
+                              >
+                            Special Events
+                              </NavLink>
+                            </li>
+                          </ul>
+                        )}
+                      </li>
               <li className={`${active === 4 ? 'text-primary font-[600]' : ''} navItem`}>
                 <Link to="/contact">Contact Us</Link>
               </li>

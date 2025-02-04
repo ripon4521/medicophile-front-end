@@ -1,8 +1,8 @@
 import { Outlet } from "react-router-dom";
-import Navbar from "../pages/Home/Navbar/Navbar";
-import MobileNavbar from "../pages/Home/Navbar/MobileNavba";
 import { useEffect, useState } from "react";
 import LoadingScreen from "../Utils/LoadingScreen";
+import Navbar from "../components/Home/Navbar/Navbar";
+import MobileNavbar from "../components/Home/Navbar/MobileNavba";
 
 
 const MainLayout = () => {
