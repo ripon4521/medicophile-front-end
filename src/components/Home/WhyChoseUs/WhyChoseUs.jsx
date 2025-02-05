@@ -34,7 +34,7 @@ const WhyChoseUs = () => {
       <h2 className="text-xl drop-shadow-md font-semibold">Best Quality Taxi</h2>
       <p style={{ fontFamily: 'Rancho, serif' }} className="text-4xl">01</p>
       </div>
-        <p>There are many variations of passages available but the majority have suffered alteration in form injected humour wor.</p>
+        <p className="-mt-2">Comfortable, safe, and reliable taxis with expert drivers delivering top-quality service for a seamless travel experience.</p>
       </div>
       
         </div>
@@ -50,7 +50,7 @@ const WhyChoseUs = () => {
       <h2 className="text-xl drop-shadow-md font-semibold">Expert Drivers</h2>
       <p style={{ fontFamily: 'Rancho, serif' }} className="text-4xl">02</p>
       </div>
-        <p>There are many variations of passages available but the majority have suffered alteration in form injected humour wor.</p>
+        <p className="-m-2 pb-1">Our expert drivers are highly trained, experienced, and courteous, ensuring safe, smooth, and punctual journeys for every passenger.</p>
       </div>
       
         </div>
@@ -66,7 +66,7 @@ const WhyChoseUs = () => {
       <h2 className="text-xl drop-shadow-md font-semibold">Many Locations</h2>
       <p style={{ fontFamily: 'Rancho, serif' }} className="text-4xl">03</p>
       </div>
-        <p>There are many variations of passages available but the majority have suffered alteration in form injected humour wor.</p>
+        <p className="-mt-3">We serve numerous locations, ensuring convenient and accessible travel options wherever you need to go. Ride with us anywhere!</p>
       </div>
       
         </div>
