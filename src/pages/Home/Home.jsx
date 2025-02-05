@@ -3,6 +3,7 @@ import Banner from "../../components/Home/Banner/Banner";
 import BookingFrom from "../../components/Home/BookingFrom/BookingFrom";
 import Faq from "../../components/Home/Faq/Faq";
 import OurServices from "../../components/Home/OurServices/OurServices";
+import TestimonnialSlider from "../../components/Home/Testimonials/TestimonnialSlider";
 import WhyChoseUs from "../../components/Home/WhyChoseUs/WhyChoseUs";
 
 
@@ -17,6 +18,7 @@ const Home = () => {
             <AboutUs/>
        <WhyChoseUs/>
        <Faq/>
+       <TestimonnialSlider/>
            
         </div>
     );

@@ -32,7 +32,7 @@ const Faq = () => {
   ];
 
   return (
-  <div className='bg-gray-100 mb-10'>
+  <div className='bg-gray-100 '>
       <section className="py-10 md:py-10 mx-auto w-full max-w-7xl px-5 md:px-10 ">
       <div className="flex flex-col items-start lg:flex-row lg:space-x-20">
         <div className=" max-w-6xl mx-auto flex-none">
