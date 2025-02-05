@@ -18,3 +18,9 @@ body {
     }
   }
   
+  @layer utilities {
+    .fade-in {
+      @apply opacity-100 translate-y-0;
+    }
+  }
+  

@@ -11,13 +11,16 @@ const AboutUs = () => {
 
     return (
        <div className=" drop-shadow-md ">
+
          <div className="flex py-10 flex-col lg:flex-row  lg:gap-20 gap-10 items-center mt-10 max-w-7xl  mx-auto">
+
            <div data-aos="fade-up"
      data-aos-duration="2000" >
         <p className="flex justify-center absolute bg-black text-white gap-2 px-2 drop-shadow-md    items-center w-[200px] py-1 rounded-2xl mt-5 ml-10 z-10"><MdOutlineTipsAndUpdates className="w-10 bg-amber-400 h-10 p-1 rounded-md text-white "/> 30 Years Of
         Quality Service</p>
            <img className="lg:w-[700px] md:w-[600px] w-[350px] relative" src="https://live.themewild.com/taxica/assets/img/about/01.png" alt="" />
            </div>
+
             <div className="drop-shadow-md px-5">
                 <p data-aos="fade-up"
      data-aos-duration="2000"  className="font-semibold  md:text-xl uppercase text-yellow-400">About Us</p>
@@ -45,7 +48,10 @@ const AboutUs = () => {
                            </button>
 
             </div>
+            
         </div> 
+        {/* <img className="justify-end absolute md:-m-[420px] hidden md:block  w-full" src="/src/assets/Union.png" alt="" /> */}
+        <img className="justify-start absolute md:-m-[420px] hidden md:block  w-full" src="/src/assets/union3.png" alt="" />
        </div>
     );
 };
