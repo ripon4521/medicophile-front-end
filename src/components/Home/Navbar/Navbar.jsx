@@ -19,7 +19,7 @@ const Navbar = () => {
   const handleLinkClick = () => setDropdownOpen(false);
 
   return (
-    <div className="bg-gray-50 shadow fixed w-full z-50 top-0  hidden lg:block">
+    <div className="bg-gray-50 shadow fixed w-full z-50 top-0  hidden md:block">
       <nav className={`container mx-auto flex items-center justify-between  px-6 transition-shadow ${shadow ? '' : ''}`}>
         <Link to="/" className="flex items-center">
           <span
@@ -61,8 +61,12 @@ const Navbar = () => {
               <ul className="absolute top-full left-0 bg-white shadow-lg mt-2 w-52 py-2 rounded">
                 <li>
                   <NavLink
-                    to="/service1"
-                    className="block px-4 py-2 text-black hover:bg-yellow-400 rounded-md font-bold"
+                    to="/airport-Transfer"
+                    className={({ isActive }) =>
+                      isActive
+                        ? 'font-inter text-base px-8 ml-1 py-1 bg-yellow-400 rounded-md font-bold'
+                        : 'font-inter text-base hover:text-yellow-500 font-bold ml-4'
+                    }
                     onClick={handleLinkClick}
                   >
                     Airport Transfers

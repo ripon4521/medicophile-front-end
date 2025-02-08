@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import LoadingScreen from "../Utils/LoadingScreen";
 import Navbar from "../components/Home/Navbar/Navbar";
 import MobileNavbar from "../components/Home/Navbar/MobileNavba";
+import Footer from "../Shared/Footer";
 
 
 const MainLayout = () => {
@@ -21,6 +22,8 @@ const MainLayout = () => {
            <Navbar/>
             <MobileNavbar/>
             <Outlet/>
+         
+            
         </div>
       )}
           
