@@ -9,6 +9,9 @@ import bg from '../../../../public/testimonial/taxi.jpeg'
 import man1 from '../../../../public/testimonial/man 1.jpg'
 import man2 from '../../../../public/testimonial/man2.jpg'
 import man3 from '../../../../public/testimonial/man3.jpg'
+import { MdAddCall } from "react-icons/md";
+import { FaLongArrowAltRight } from 'react-icons/fa';
+
 
 const TestimonnialSlider = () => {
   const cards = [
@@ -16,7 +19,7 @@ const TestimonnialSlider = () => {
       id: 1,
       icon: (
         <img
-          className="w-full h-64  rounded-sm"
+          className="w-20 h-20  rounded-full"
           src={man1}
           alt="man1"
         />
@@ -29,7 +32,7 @@ const TestimonnialSlider = () => {
       id: 2,
       icon: (
         <img
-          className="w-full h-64  rounded-sm"
+          className="w-20 h-20  rounded-full"
           src={man2}
           alt="man"
         />
@@ -42,7 +45,7 @@ const TestimonnialSlider = () => {
       id: 3,
       icon: (
         <img
-          className="w-full h-64  rounded-sm"
+          className="w-20 h-20   rounded-full"
           src={man3}
           alt="man3"
         />
@@ -50,44 +53,9 @@ const TestimonnialSlider = () => {
       name: "Emily R.",
       description:'“Superb experience! The driver was knowledgeable about Pembrokeshire, which made the ride more enjoyable.”'
      
-    },
+    }
    
-    {
-      id: 5,
-      icon: (
-        <img
-          className="w-full h-64  rounded-sm"
-          src="https://s3-alpha-sig.figma.com/img/d30d/2972/6ef940ae0353ae9879b5ad00a08218dc?Expires=1710720000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=W5qUH56SgHYN8APDOFWmegST1M9FLvwHuS76cGFj9XHvPwfp8Ta9m2MQva0ostSzfOgN1xSrtSfEkDQsyFAka65MJMUIvkcxWzgWYDYBp1CsH45gipkkX6wzPHO8wNeh21K3iO6efUDtsmjK5Th-GAsaBk2NUJDtgQpeF~8cOpbUc4BVA~WICbQu3sC92yOEB8Qbt7ZZbFwQw284pLF2UuUEDV-mx3DDbQok~J3zpjEh2ehskbkZjT93YVicdyZxosj7QqqNd8QyOsjOWOIzaKfCbU2Foe7S2aAXRuM93YT91xSe254qpBWILzlxqf6~8sWWM~XNRDCftn51IcSTlg__"
-          alt=""
-        />
-      ),
-      name: "Quality Residence",
-     
-    },
-    {
-      id: 6,
-      name: "Top Notch Facilities",
-      icon: (
-        <img
-          className="w-full h-64  rounded-sm"
-          src="https://s3-alpha-sig.figma.com/img/6cbc/cb21/55f6a8acd8dd350402f9f109ac2f2964?Expires=1710720000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=adNBO5HC3dVLmyeq3xYPKq7r0uigoPPsB3RnmUqq9GJg31fLX~jozlvNgv4nG50U7Nybm6rNHHcapApGlnd8gq68Y9G-zaXuGIrUOAJGKnkFwn9tIKD0oPyBwYQlqZyLO7un4JyvG3THvaZk4Xt2KvFnr-B84UR1XYaOBJrBEULRQJU0kqtPvCkXLT77nSi7Y~GpZ1F4v35zBSeXqEXSECUGi~VwjK3s5L~9JRNV1M5ZrbWRy5sxAmCG-J7REAneFLy2IwHxoj0dteTM6VXP3dTkZRN98RsVE-~vlvYbzBXAf10j4ZfOsd-nSnfQtMTA9A4KVDQCo8iGyRjSt557cA__"
-          alt=""
-        />
-      ),
-     
-    },
-    {
-      id: 7,
-      icon: (
-        <img
-          className="w-full h-64  rounded-sm"
-          src="https://s3-alpha-sig.figma.com/img/d30d/2972/6ef940ae0353ae9879b5ad00a08218dc?Expires=1710720000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=W5qUH56SgHYN8APDOFWmegST1M9FLvwHuS76cGFj9XHvPwfp8Ta9m2MQva0ostSzfOgN1xSrtSfEkDQsyFAka65MJMUIvkcxWzgWYDYBp1CsH45gipkkX6wzPHO8wNeh21K3iO6efUDtsmjK5Th-GAsaBk2NUJDtgQpeF~8cOpbUc4BVA~WICbQu3sC92yOEB8Qbt7ZZbFwQw284pLF2UuUEDV-mx3DDbQok~J3zpjEh2ehskbkZjT93YVicdyZxosj7QqqNd8QyOsjOWOIzaKfCbU2Foe7S2aAXRuM93YT91xSe254qpBWILzlxqf6~8sWWM~XNRDCftn51IcSTlg__"
-          alt=""
-        />
-      ),
-      name: "Quality Residence",
-     
-    },
+   
     
   ];  
   
@@ -119,7 +87,8 @@ const TestimonnialSlider = () => {
   }
     
   return (
-    <div 
+ <div>
+     <div 
     style={{
       backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(${bg})`,
       backgroundSize: 'cover',
@@ -130,41 +99,46 @@ const TestimonnialSlider = () => {
     id='service'
   >
     <div className='max-w-7xl mx-auto'>
-      <p className='text-center text-yellow-400 text-xl font-semibold
+      <p className='text-center text-yellow-400 md:text-xl font-semibold
        drop-shadow-md uppercase'>Testimonials</p>
-      <h2 className='text-5xl pb-5 font-bold flex flex-col items-center text-white drop-shadow-md'>What Our Customers <span className='text-yellow-400'>Say's</span></h2>
+      <h2 className='md:text-5xl text-3xl pb-5 font-bold flex flex-col items-center text-white drop-shadow-md'>What Our Customers <span className='text-yellow-400'>Say's</span></h2>
       <Slider {...sliderSettings}>
-        {cards.map(card => (
-          <div className='px-5' key={card.id}>
-    
-
-    <article className="hover:animate-background rounded-xl bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]">
-      <div className=" rounded-[10px] bg-white p-4 !pt-20 sm:p-6">
-        <time className="block text-xs text-gray-500" dateTime="2019-06-29">
-          29th June 2019
-        </time>
-        <a href="#">
-          <h3 className="mt-0.5 text-lg font-medium text-gray-900">
-            Next.js crash course by KhateykoBan
-          </h3>
-        </a>
-        <div className="mt-4 flex flex-wrap gap-1">
-          <span className="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
-            Snippet
-          </span>
-          <span className="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
-            JavaScript
-          </span>
-        </div>
+  {cards.map((card) => (
+    <div className="p-5" key={card.id}>
+      <div className="bg-white drop-shadow-md rounded-xl shadow-lg overflow-hidden p-6 flex flex-col items-center">
+        <div className="mb-4 drop-shadow-md">{card.icon}</div>
+        
+        <h3 className="text-xl font-semibold text-black drop-shadow-md">{card.name}</h3>
+      
+   
+        <p className="drop-shadow-md mt-3 text-center">{card.description}</p>
       </div>
-    </article>
-
-
-          </div>
-        ))}
-      </Slider>
     </div>
+  ))}
+</Slider>
+
+
+
+    </div>
+
+
   </div>
+  <div data-aos="fade-up"
+     data-aos-duration="2000" className='bg-yellow-500 w-full drop-shadow-md' >
+<div className='max-w-6xl mx-auto flex md:py-20 py-10 px-2 text-white flex-col md:flex-row md:gap-10 gap-5'>
+<div className='max-w-2xl border-r-4  '>
+<h1 className='md:text-5xl text-3xl drop-shadow-md font-bold   max-w-2xl'>Book Your Cab It's Simple And Affordable</h1>
+<p className='drop-shadow-md'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout point of using is that it has normal distribution of letters.</p>
+</div>
+<div>
+  <p className='flex items-center gap-1 text-3xl font-bold'><MdAddCall/> (+44) 07783664574</p>
+  <button  className="flex items-center hover:gap-1 bg-black text-white rounded-2xl px-4 py-2 justify-center   mt-2 font-bold drop-shadow-md  cursor-pointer ">
+                            Book Your Cab <FaLongArrowAltRight className=""/>
+                           </button>
+</div>
+</div>
+    </div>
+ </div>
   
   
   )
