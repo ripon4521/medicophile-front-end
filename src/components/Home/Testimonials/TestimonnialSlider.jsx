@@ -5,7 +5,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 import { useState } from 'react';
 import { useEffect } from 'react';
-import bg from '../../../../public/testimonial/taxi.jpeg'
+
 import man1 from '../../../../public/testimonial/man 1.jpg'
 import man2 from '../../../../public/testimonial/man2.jpg'
 import man3 from '../../../../public/testimonial/man3.jpg'
@@ -101,17 +101,19 @@ const TestimonnialSlider = () => {
     <div className='max-w-7xl mx-auto'>
       <p className='text-center text-yellow-400 md:text-xl font-semibold
        drop-shadow-md uppercase'>Testimonials</p>
-      <h2 className='md:text-5xl text-3xl pb-5 font-bold flex flex-col items-center text-white drop-shadow-md'>What Our Customers <span className='text-yellow-400'>Say's</span></h2>
+      <h2 className='md:text-5xl text-3xl pb-5 font-bold flex flex-col items-center text-white drop-shadow-md'>What Our Customers <span className='text-yellow-400 '>Say's</span></h2>
       <Slider {...sliderSettings}>
   {cards.map((card) => (
     <div className="p-5" key={card.id}>
-      <div className="bg-white drop-shadow-md rounded-xl shadow-lg overflow-hidden p-6 flex flex-col items-center">
+      <div className="hover:border-amber-500 hover:border bg-amber-50 drop-shadow-md rounded-xl shadow-lg overflow-hidden p-6 flex flex-col items-center">
         <div className="mb-4 drop-shadow-md">{card.icon}</div>
+      
         
         <h3 className="text-xl font-semibold text-black drop-shadow-md">{card.name}</h3>
       
    
-        <p className="drop-shadow-md mt-3 text-center">{card.description}</p>
+        <p className="drop-shadow-md mt-3 text-center relative">{card.description}</p>
+      {/* <h1 style={{ fontFamily: 'Rancho, serif' }} className=' '>99</h1> */}
       </div>
     </div>
   ))}
@@ -124,13 +126,16 @@ const TestimonnialSlider = () => {
 
   </div>
   <div data-aos="fade-up"
-     data-aos-duration="2000" className='bg-yellow-500 w-full drop-shadow-md' >
-<div className='max-w-6xl mx-auto flex md:py-20 py-10 px-2 text-white flex-col md:flex-row md:gap-10 gap-5'>
-<div className='max-w-2xl border-r-4  '>
-<h1 className='md:text-5xl text-3xl drop-shadow-md font-bold   max-w-2xl'>Book Your Cab It's Simple And Affordable</h1>
+     data-aos-duration="2000" className='bg-yellow-500 w-full drop-shadow-md ' >
+<div data-aos="fade-up"
+     data-aos-duration="2000" className='max-w-6xl mx-auto flex md:py-20 py-10 px-2 text-white flex-col md:flex-row md:gap-10 gap-5'>
+<div data-aos="fade-up"
+     data-aos-duration="2000" className='max-w-2xl border-r-4  '>
+<h1  className='md:text-5xl text-3xl drop-shadow-md font-bold   max-w-2xl'>Book Your Cab It's Simple And Affordable</h1>
 <p className='drop-shadow-md'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout point of using is that it has normal distribution of letters.</p>
 </div>
-<div>
+<div data-aos="fade-up"
+     data-aos-duration="2000">
   <p className='flex items-center gap-1 text-3xl font-bold'><MdAddCall/> (+44) 07783664574</p>
   <button  className="flex items-center hover:gap-1 bg-black text-white rounded-2xl px-4 py-2 justify-center   mt-2 font-bold drop-shadow-md  cursor-pointer ">
                             Book Your Cab <FaLongArrowAltRight className=""/>
