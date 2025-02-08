@@ -24,3 +24,18 @@ body {
     }
   }
   
+  @keyframes border-scroll {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  .animate-border-scroll {
+    background: linear-gradient(90deg, blue, purple, cyan);
+    background-size: 300% 100%;
+    animation: border-scroll 3s linear infinite;
+    mask-composite: exclude;
+  }

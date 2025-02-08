@@ -6,6 +6,7 @@ import OurServices from "../../components/Home/OurServices/OurServices";
 import { Testimonial } from "../../components/Home/Testimonials/Testimonial";
 // import TestimonnialSlider from "../../components/Home/Testimonials/TestimonnialSlider";
 import WhyChoseUs from "../../components/Home/WhyChoseUs/WhyChoseUs";
+import Footer from "../../Shared/Footer";
 
 
 
@@ -20,6 +21,7 @@ const Home = () => {
        <WhyChoseUs/>
        <Faq/>
        <Testimonial/>
+       <Footer/>
            
         </div>
     );
