@@ -111,15 +111,19 @@ const MobileNavbar = ({ active }) => {
             
                         {dropdownOpen && (
                           <ul className="absolute top-full left-0 bg-white shadow-lg mt-2 w-52 py-2 rounded">
-                            <li>
-                              <NavLink
-                                to="/service1"
-                                className="block px-4 py-2 text-gray-700 hover:bg-blue-500 hover:text-white"
-                                onClick={handleLinkClick}
-                              >
-                             Airport Transfers
-                              </NavLink>
-                            </li>
+                           <li>
+                                           <NavLink
+                                             to="/airport-Transfer"
+                                             className={({ isActive }) =>
+                                               isActive
+                                                 ? 'font-inter text-base px-8 ml-1 py-1 bg-yellow-400 rounded-md font-bold'
+                                                 : 'font-inter text-base hover:text-yellow-500 font-bold ml-4'
+                                             }
+                                             onClick={handleLinkClick}
+                                           >
+                                             Airport Transfers
+                                           </NavLink>
+                                         </li>
                             <li>
                               <NavLink
                                 to="/service2"

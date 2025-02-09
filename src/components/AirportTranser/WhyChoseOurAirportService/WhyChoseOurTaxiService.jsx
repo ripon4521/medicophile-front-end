@@ -3,9 +3,11 @@ import { FcApproval } from "react-icons/fc";
 
 const WhyChoseOurTaxiService = () => {
     return (
-        <div className="max-w-6xl mx-auto py-5">
-            <h1 className="text-4xl font-bold drop-shadow-md">Why Choose Our <span className="text-yellow-400">Airport Transfer</span> Service?</h1>
-         <div>
+        <div data-aos="fade-up"
+        data-aos-duration="2000" className="max-w-6xl mx-auto pt-5 md:mt-36 px-2 md:-mb-16 -mb-52 mt-64 lg:-mb-0">
+            <h1 className="text-4xl font-bold drop-shadow-md ">Why Choose Our <span className="text-yellow-400">Airport Transfer</span> Service?</h1>
+         <div data-aos="fade-up"
+                                       data-aos-duration="2000" className="">
          <p className="text-2xl mt-5"><span className="font-bold">1.</span> Punctual and Reliable Pickups</p>
             <ul className="mt-1">
                 <li className="flex justify-start items-center gap-1 "> <span><FcApproval/></span>Timely pickup and drop-off to ensure you never miss a flight.</li>
@@ -14,7 +16,8 @@ const WhyChoseOurTaxiService = () => {
             </ul>
          </div>
 
-         <div>
+         <div data-aos="fade-up"
+                                       data-aos-duration="2000">
          <p className="text-2xl mt-5"><span className="font-bold">2.</span> Wide Coverage Across London</p>
             <ul className="mt-1">
                 <li className="flex justify-start items-center gap-1 "> <span><FcApproval/></span>Serving all areas of Greater London and surrounding regions.</li>
@@ -23,7 +26,8 @@ const WhyChoseOurTaxiService = () => {
             </ul>
          </div>
 
-         <div>
+         <div data-aos="fade-up"
+                                       data-aos-duration="2000">
          <p className="text-2xl mt-5"><span className="font-bold">3.</span>Comfortable and Modern Fleet</p>
             <ul className="mt-1">
                 <li className="flex justify-start items-center gap-1 "> <span><FcApproval/></span>Clean and well-maintained vehicles for a luxurious ride.</li>
@@ -32,7 +36,8 @@ const WhyChoseOurTaxiService = () => {
             </ul>
          </div>
          
-         <div>
+         <div data-aos="fade-up"
+                                       data-aos-duration="2000">
          <p className="text-2xl mt-5"><span className="font-bold">4.</span>Professional Drivers</p>
             <ul className="mt-1">
                 <li className="flex justify-start items-center gap-1 "> <span><FcApproval/></span>Polite, experienced, and licensed drivers.</li>
@@ -41,7 +46,8 @@ const WhyChoseOurTaxiService = () => {
             </ul>
          </div>
 
-         <div>
+         <div data-aos="fade-up"
+                                       data-aos-duration="2000">
          <p className="text-2xl mt-5"><span className="font-bold">5.</span>Safe and Secure Travel</p>
             <ul className="mt-1">
                 <li className="flex justify-start items-center gap-1 "> <span><FcApproval/></span>Vehicles equipped with modern safety features.</li>
@@ -50,7 +56,8 @@ const WhyChoseOurTaxiService = () => {
             </ul>
          </div>
 
-         <div>
+         <div data-aos="fade-up"
+                                       data-aos-duration="2000">
          <p className="text-2xl mt-5"><span className="font-bold">6.</span>Competitive Pricing</p>
             <ul className="mt-1">
                 <li className="flex justify-start items-center gap-1 "> <span><FcApproval/></span>Transparent rates with no hidden fees.</li>
@@ -58,7 +65,8 @@ const WhyChoseOurTaxiService = () => {
               
             </ul>
          </div>
-         <div>
+         <div data-aos="fade-up"
+                                       data-aos-duration="2000">
          <p className="text-2xl mt-5"><span className="font-bold">7.</span>Simple Booking Process</p>
             <ul className="mt-1">
                 <li className="flex justify-start items-center gap-1 "> <span><FcApproval/></span>Easy online booking through our website.</li>
@@ -68,8 +76,10 @@ const WhyChoseOurTaxiService = () => {
          </div>
 
 
-         <h1 className="text-2xl  my-3 font-semibold drop-shadow-md">Additional Services We Offer:</h1>
-         <div>
+         <h1 data-aos="fade-up"
+                                       data-aos-duration="2000" className="text-2xl  my-3 font-semibold drop-shadow-md">Additional Services We Offer:</h1>
+         <div data-aos="fade-up"
+                                       data-aos-duration="2000">
         
             <ul className="mt-1">
                 <li className="flex justify-start items-center gap-1 "> <span><FcApproval/></span>Meet-and-greet services for a warm welcome at the airport.</li>
@@ -79,10 +89,12 @@ const WhyChoseOurTaxiService = () => {
             </ul>
          </div>
 
-         <h1 className="text-2xl  my-3 font-semibold drop-shadow-md">How to Book Your Airport Transfer:</h1>
-         <div>
+         <h1 data-aos="fade-up"
+                                       data-aos-duration="2000" className="text-2xl  my-3 font-semibold drop-shadow-md">How to Book Your Airport Transfer:</h1>
+         <div data-aos="fade-up"
+                                       data-aos-duration="2000">
         
-            <ul className="mt-1">
+            <ul className="mt-1 lg:mb-4">
                 <li className="flex justify-start items-center gap-1 "> <span><FcApproval/></span>Visit our website and navigate to the booking section.</li>
                 <li className="flex justify-start items-center gap-1 "> <span><FcApproval/></span>Enter your pickup and drop-off details.</li>
                 <li className="flex justify-start items-center gap-1 "> <span><FcApproval/></span>Confirm your booking and enjoy a smooth airport transfer with MD Taxi.</li>
