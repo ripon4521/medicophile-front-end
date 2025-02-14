@@ -22,8 +22,7 @@ const MainLayout = () => {
            <Navbar/>
             <MobileNavbar/>
             <Outlet/>
-         
-            
+            <Footer/>
         </div>
       )}
           

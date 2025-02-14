@@ -21,7 +21,7 @@ const Home = () => {
        <WhyChoseUs/>
        <Faq/>
        <Testimonial/>
-       <Footer/>
+   
            
         </div>
     );
