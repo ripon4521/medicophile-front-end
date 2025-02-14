@@ -1,8 +1,8 @@
 
 import { FaLongArrowAltRight } from 'react-icons/fa';
-import bg from '../../../public/AirportTranser/local rides.jpg'
+import bg from '../../../public/AirportTranser/sepacial sevice.jpg'
 import { MdAddCall } from 'react-icons/md';
-const LocalRidesBanner = () => {
+const SpecailEventsBanner = () => {
     return (
         <div style={{
                       backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(${bg})`,
@@ -45,4 +45,4 @@ const LocalRidesBanner = () => {
     );
 };
 
-export default LocalRidesBanner;
+export default SpecailEventsBanner;

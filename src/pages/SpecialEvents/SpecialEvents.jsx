@@ -1,9 +1,12 @@
+import SpecailEventsBanner from "./SpecailEventsBanner";
+import SpecialEventContent from "./SpecialEventContent";
 
 
 const SpecialEvents = () => {
     return (
         <div>
-           <h1 className="text-3xl mx-auto text-center mt-20">Special Events </h1> 
+    <SpecailEventsBanner/>
+    <SpecialEventContent/>
         </div>
     );
 };

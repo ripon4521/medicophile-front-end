@@ -3,6 +3,7 @@ import MainLayout from "../src/Layout/MainLayout";
 import Home from "../src/pages/Home/Home";
 import AirportTransfer from "../src/pages/Services/AirportTransfer/AirportTransfer";
 import LocalRides from "../src/pages/LocalRides/LocalRides";
+import SpecialEvents from "../src/pages/SpecialEvents/SpecialEvents";
 
 
 export const router = createBrowserRouter([
@@ -20,6 +21,9 @@ export const router = createBrowserRouter([
             },{
                 path:"/local-rides",
                 element:<LocalRides/>
+            },{
+                path:"/special-events",
+                element:<SpecialEvents/>
             }
         ]
     }
