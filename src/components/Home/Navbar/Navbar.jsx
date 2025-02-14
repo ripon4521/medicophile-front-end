@@ -106,16 +106,17 @@ const Navbar = () => {
 
           <li>
             <NavLink
-              to="/about"
+              to="/about-us"
               className={({ isActive }) =>
                 isActive
-                  ? 'text-yellow-700 font-bold'
-                  : 'hover:text-yellow-700 font-bold'
+                  ? 'font-inter text-base px-3 py-1 bg-yellow-400 rounded-md font-bold'
+                  : 'font-inter text-base hover:text-yellow-700 font-bold'
               }
             >
-              About Us
+      About Us
             </NavLink>
           </li>
+
 
           <li>
             <NavLink

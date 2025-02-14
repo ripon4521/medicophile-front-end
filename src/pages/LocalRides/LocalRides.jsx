@@ -4,7 +4,7 @@ import LocalRidesContent from "./LocalRidesContent";
 
 const LocalRides = () => {
     return (
-        <div className="mt-14">
+        <div className="lg:mt-14 ">
             <LocalRidesBanner/>
             <LocalRidesContent/>
         </div>
