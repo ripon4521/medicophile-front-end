@@ -15,10 +15,10 @@ const LocalRidesBanner = () => {
 
                         <div className='  max-w-5xl mx-auto  md:py-40 py-20'>
                             <h1 className='md:text-5xl text-4xl font-bold text-white text-center drop-shadow-md'>Book Your <span className='text-yellow-400'>Local Rides</span> Today</h1>
-                            <p className=' md:text-xl my-4 text-white text-center drop-shadow-md'>Airport Transfers Start your journey stress-free with our reliable airport transfer service. We cover all major airports, providing timely pickups and drop-offs while tracking your flight for any changes.
+                            <p className=' md:text-xl my-4 text-white text-center drop-shadow-md'>Start your journey stress-free with our reliable Local Rides service. We ensure timely pickups and drop-offs across the city, providing a smooth and hassle-free experience.
                             </p>
                              <div className='flex justify-center'>
-                             <button className="flex items-center hover:gap-1 bg-yellow-400 text-black rounded-2xl px-4 py-2 justify-center font-bold drop-shadow-md cursor-pointer">
+                             <button className="flex items-center hover:gap-1 bg-yellow-400 text-black rounded-2xl px-4 py-2 justify-center font-bold drop-shadow-md cursor-pointer"> 
                                   Read More <FaLongArrowAltRight />
                                 </button>
                              </div>

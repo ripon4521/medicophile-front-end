@@ -27,9 +27,9 @@ const LocalRidesContent = () => {
         </div>
 
         <div className="mt-6 flex justify-center">
-          <button className="text-white bg-purple-500 cursor-pointer px-6 py-2 rounded-lg shadow-md">
+          <a href="tel:+1234567890" className="btn btn-primary text-white px-6 py-2 rounded-lg shadow-md">
             Book a Ride
-          </button>
+          </a>
         </div>
       </div>
     </div>

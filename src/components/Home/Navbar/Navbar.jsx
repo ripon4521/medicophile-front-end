@@ -85,16 +85,21 @@ const Navbar = () => {
                   Local Rides
                   </NavLink>
                 </li>
-               
-                <li>
+                <li className='my-4'>
                   <NavLink
-                    to="/service3"
-                    className="block px-4 py-2 text-black hover:bg-yellow-400 rounded-md font-bold"
+                    to="/special-events"
+                    className={({ isActive }) =>
+                      isActive
+                        ? 'font-inter text-base px-8 ml-1 py-1 bg-yellow-400 rounded-md font-bold '
+                        : 'font-inter text-base hover:text-yellow-500 font-bold ml-4 '
+                    }
                     onClick={handleLinkClick}
                   >
-                    Special Events
+                  Special Events
                   </NavLink>
                 </li>
+               
+              
               </ul>
             )}
           </li>
