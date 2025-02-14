@@ -249,8 +249,8 @@ export function Testimonial() {
           <div data-aos="fade-up"
                data-aos-duration="2000">
             <p className='flex items-center gap-1 text-3xl font-bold'><MdAddCall/> (+44) 07783664574</p>
-            <button  className="flex items-center hover:gap-1 bg-black text-white rounded-2xl px-4 py-2 justify-center   mt-2 font-bold drop-shadow-md  cursor-pointer ">
-                                      Book Your Cab <FaLongArrowAltRight className=""/>
+            <button   className=" hover:gap-1 bg-black text-white rounded-2xl px-4 py-2 justify-center   mt-2 font-bold drop-shadow-md  cursor-pointer ">
+                                    <a href="tel:+447783664574" className='flex items-center'>  Book Your Cab <FaLongArrowAltRight className=""/></a>
                                      </button>
           </div>
           </div>

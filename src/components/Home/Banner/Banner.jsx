@@ -35,7 +35,7 @@ const Banner = () => {
     <h1   data-aos="fade-up"
      data-aos-offset="100"
      data-aos-duration="1000"
-     data-aos-easing="ease-in-sine"  style={{ fontFamily: 'Rancho, serif' }} className=" text-xl lg:text-5xl md:text-4xl flex text-center justify-center items-center gap-2 drop-shadow-md"><MdAddCall/>Call Now: <span className="text-yellow-400">07783664574</span> </h1>
+     data-aos-easing="ease-in-sine"  style={{ fontFamily: 'Rancho, serif' }} className=" text-xl lg:text-5xl md:text-4xl flex text-center justify-center items-center gap-2 drop-shadow-md"><MdAddCall/>Call Now: <span className="text-yellow-400">(+44) 07783664574</span> </h1>
  
       <p data-aos="zoom-in"  data-aos-duration="1000" className="md:mb-5 mb-2 mt-2 max-w-4xl  mx-auto drop-shadow-md lg:text-xl md:text-[20px] text-xs  text-white">
       MD Taxi Your trusted transportation partner in the beautiful Pembrokeshire region! Whether you need a quick ride to the local shops, a scenic journey to a coastal destination, or a reliable airport transfer!!
@@ -44,10 +44,13 @@ const Banner = () => {
       <div data-aos="fade-up"
      data-aos-duration="2000" className="flex items-center  drop-shadow-md justify-center">
           {/* <CiSearch className="text-[1.5rem] cursor-pointer" /> */}
-               <button data-aos="fade-up"
-            data-aos-duration="2000" className="flex items-center hover:gap-2 bg-yellow-400 text-black rounded-2xl px-4  justify-center  h-14  font-bold drop-shadow-md text-xl cursor-pointer ">
-                                   Discover <FaLongArrowAltRight className=""/>
-                                  </button>
+          <button data-aos="fade-up"
+        data-aos-duration="2000" 
+        className=" hover:gap-2 bg-yellow-400 text-black rounded-2xl px-4 justify-center h-14 font-bold drop-shadow-md text-xl cursor-pointer">
+    <a className='flex items-center' href="tel:+447783664574">Call Now   <FaLongArrowAltRight className="" /></a> 
+  
+</button>
+
        
         </div>
     </div>

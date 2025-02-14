@@ -117,19 +117,20 @@ const Navbar = () => {
             </NavLink>
           </li>
 
-
           <li>
             <NavLink
-              to="/contact"
+              to="/contact-us"
               className={({ isActive }) =>
                 isActive
-                  ? 'text-yellow-700 font-bold'
-                  : 'hover:text-yellow-700 font-bold'
+                  ? 'font-inter text-base px-3 py-1 bg-yellow-400 rounded-md font-bold'
+                  : 'font-inter text-base hover:text-yellow-700 font-bold'
               }
             >
-              Contact Us
+      Contact Us
             </NavLink>
           </li>
+
+
         </ul>
 
         <button className="py-2.5 px-6 border border-yellow-400 text-black rounded-tr-[30px] rounded-bl-[30px] hover:bg-yellow-400 hover:text-black font-bold transition-all duration-200">

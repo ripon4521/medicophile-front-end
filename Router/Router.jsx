@@ -5,6 +5,7 @@ import AirportTransfer from "../src/pages/Services/AirportTransfer/AirportTransf
 import LocalRides from "../src/pages/LocalRides/LocalRides";
 import SpecialEvents from "../src/pages/SpecialEvents/SpecialEvents";
 import AboutUs from "../src/pages/AboutUs/AboutUs";
+import ContactUs from "../src/pages/ContactUsPage/ContactUs";
 
 
 export const router = createBrowserRouter([
@@ -28,6 +29,9 @@ export const router = createBrowserRouter([
             },{
                 path:"/about-us",
                 element:<AboutUs/>
+            },{
+                path:"/contact-us",
+                element:<ContactUs/>
             }
         ]
     }
