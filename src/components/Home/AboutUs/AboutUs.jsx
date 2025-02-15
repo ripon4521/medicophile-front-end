@@ -2,6 +2,7 @@
 import { TbChevronRight } from "react-icons/tb";
 import { MdOutlineTipsAndUpdates } from "react-icons/md";
 import { FaLongArrowAltRight } from "react-icons/fa";
+import taxi from '../../../../public/AboutUs/01-removebg-preview.png'
 
 
 
@@ -16,9 +17,14 @@ const AboutUs = () => {
 
            <div data-aos="fade-up"
      data-aos-duration="2000" >
-        <p className="flex justify-center absolute bg-black text-white gap-2 px-2 drop-shadow-md    items-center w-[200px] py-1 rounded-2xl mt-5 ml-10 z-10"><MdOutlineTipsAndUpdates className="w-10 bg-amber-400 h-10 p-1 rounded-md text-white "/> 30 Years Of
-        Quality Service</p>
-           <img className="lg:w-[700px] md:w-[600px] w-[350px] relative" src="https://live.themewild.com/taxica/assets/img/about/01.png" alt="" />
+        <p className="flex justify-center absolute bg-black text-white gap-2 px-3 drop-shadow-md items-center w-[220px] py-1 rounded-2xl ml-10 z-10">
+  <MdOutlineTipsAndUpdates className="w-10 bg-amber-400 h-10 p-1 rounded-md text-white" /> 
+  Reliable & Affordable Rides
+</p>
+
+    
+           <img className="lg:w-[700px] md:w-[600px] w-[350px] relative" src={taxi} alt="" />
+        
            </div>
 
             <div className="drop-shadow-md px-5">
