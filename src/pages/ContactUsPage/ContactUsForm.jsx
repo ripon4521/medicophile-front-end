@@ -33,7 +33,7 @@ const ContactUs = () => {
       return;
     }
 
-    const response = await fetch("https://formspree.io/f/xqkjjoyg", { // Replace with your actual Formspree ID
+    const response = await fetch("https://formspree.io/f/mrbeyneg", { // Replace with your actual Formspree ID
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),

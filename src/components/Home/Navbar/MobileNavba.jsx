@@ -9,7 +9,7 @@ import { IoIosArrowDown } from 'react-icons/io';
 const MobileNavbar = ({ active }) => {
   const [shadow, setShadow] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-  const [dropdownOpen, setDropdownOpen] = useState(false); 
+  const [dropdownOpen, setDropdownOpen] = useState(false);
 
   // Close the sidebar when clicking outside of it
   useEffect(() => {
@@ -49,31 +49,29 @@ const MobileNavbar = ({ active }) => {
 
   const handleLinkClick = () => {
     setDropdownOpen(false); // Close the dropdown when a link is clicked
+    setIsSidebarOpen(false); // Close the sidebar when any link is clicked
   };
 
   return (
     <>
-      <div className=" shadow">
+      <div className="shadow">
         <nav
-          className={`items-center flex md:hidden justify-between z-50 px-6  sticky top-0 transition-shadow ${
-            shadow ? 'shadow-lg' : ''
-          }`}
+          className={`items-center flex md:hidden justify-between z-50 px-6 sticky top-0 transition-shadow ${shadow ? 'shadow-lg' : ''}`}
         >
-         <Link to="/" className="flex items-center justify-center">
-                <span
-                  style={{ fontFamily: 'Rancho, serif' }}
-                  className="md:text-2xl text-xl text-blue-400 font-extrabold drop-shadow-md"
-                >
-                  MD
-                </span>
-                <img src={logo} alt="logo" className="md:w-20 md:h-16 w-16 h-14" />
-                <h1 style={{ fontFamily: 'Rancho, serif' }} className="md:text-3xl text-2xl font-bold drop-shadow-md">
-                  Taxi
-                </h1>
-              </Link>
+          <Link to="/" className="flex items-center justify-center">
+            <span
+              style={{ fontFamily: 'Rancho, serif' }}
+              className="md:text-2xl text-xl text-blue-400 font-extrabold drop-shadow-md"
+            >
+              MD
+            </span>
+            <img src={logo} alt="logo" className="md:w-20 md:h-16 w-16 h-14" />
+            <h1 style={{ fontFamily: 'Rancho, serif' }} className="md:text-3xl text-2xl font-bold drop-shadow-md">
+              Taxi
+            </h1>
+          </Link>
 
           <div className="flex items-center gap-[16px]">
-          
             <AiOutlineMenu
               onClick={() => setIsSidebarOpen(true)}
               className="text-[1.6rem] text-gray-600 menu-icon"
@@ -90,69 +88,111 @@ const MobileNavbar = ({ active }) => {
           <div className="bg-white shadow rounded-md md:-mt-5 -mr-5 -mt-5 lg:hidden block">
             <RxCross1
               onClick={() => setIsSidebarOpen(false)}
-              className="text-[2rem] text-gray-700 mt-5  p-[5px] float-right hover:bg-gray-100 rounded-full"
+              className="text-[2rem] text-gray-700 mt-5 p-[5px] float-right hover:bg-gray-100 rounded-full"
             />
-            <ul className="flex flex-col gap-[30px] py-5  ml-6">
-              <li className={`${active === 1 ? 'text-primary font-[600]' : ''} navItem`}>
-                <Link to="/">Home</Link>
+
+            <ul className="flex flex-col gap-[30px] py-5 ml-6">
+              <li>
+                <NavLink
+                  to="/"
+                  className={({ isActive }) =>
+                    isActive
+                      ? 'font-inter text-base px-3 py-1 bg-yellow-400 rounded-md font-bold'
+                      : 'font-inter text-base hover:text-yellow-700 font-bold'
+                  }
+                  onClick={handleLinkClick}
+                >
+                  Home
+                </NavLink>
               </li>
-              <li className={`${active === 2 ? 'text-primary font-[600]' : ''} navItem`}>
-                <Link to="/about">About Us</Link>
+              <li>
+                <NavLink
+                  to="/about-us"
+                  className={({ isActive }) =>
+                    isActive
+                      ? 'font-inter text-base px-3 py-1 bg-yellow-400 rounded-md font-bold'
+                      : 'font-inter text-base hover:text-yellow-700 font-bold'
+                  }
+                  onClick={handleLinkClick}
+                >
+                  About Us
+                </NavLink>
               </li>
-                {/* Services Dropdown */}
-                      <li className="relative">
-                        <div
-                          className="font-inter text-base flex items-center gap-1 cursor-pointer"
-                          onClick={handleDropdownClick}
-                        >
-                          <span>Services</span>
-                          <IoIosArrowDown className={`transition-transform ${dropdownOpen ? 'rotate-180' : ''}`} />
-                        </div>
-            
-                        {dropdownOpen && (
-                          <ul className="absolute top-full left-0 bg-white shadow-lg mt-2 w-52 py-2 rounded">
-                           <li>
-                                           <NavLink
-                                             to="/airport-Transfer"
-                                             className={({ isActive }) =>
-                                               isActive
-                                                 ? 'font-inter text-base px-8 ml-1 py-1 bg-yellow-400 rounded-md font-bold'
-                                                 : 'font-inter text-base hover:text-yellow-500 font-bold ml-4'
-                                             }
-                                             onClick={handleLinkClick}
-                                           >
-                                             Airport Transfers
-                                           </NavLink>
-                                         </li>
-                            <li>
-                              <NavLink
-                                to="/service2"
-                                className="block px-4 py-2 text-gray-700 hover:bg-blue-500 hover:text-white"
-                                onClick={handleLinkClick}
-                              >
-                              Local RidesWhether
-                              </NavLink>
-                            </li>
-                            <li>
-                              <NavLink
-                                to="/service3"
-                                className="block px-4 py-2 text-gray-700 hover:bg-blue-500 hover:text-white"
-                                onClick={handleLinkClick}
-                              >
-                            Special Events
-                              </NavLink>
-                            </li>
-                          </ul>
-                        )}
-                      </li>
-              <li className={`${active === 4 ? 'text-primary font-[600]' : ''} navItem`}>
-                <Link to="/contact">Contact Us</Link>
+
+              {/* Services Dropdown */}
+              <li className="relative">
+                <div
+                  className="font-inter text-base flex items-center gap-1 cursor-pointer font-bold"
+                  onClick={handleDropdownClick}
+                >
+                  <span>Services</span>
+                  <IoIosArrowDown className={`transition-transform ${dropdownOpen ? 'rotate-180' : ''}`} />
+                </div>
+
+                {dropdownOpen && (
+                  <ul className="absolute top-full left-0 bg-white shadow-lg mt-2 w-52 py-2 rounded">
+                    <li>
+                      <NavLink
+                        to="/airport-Transfer"
+                        className={({ isActive }) =>
+                          isActive
+                            ? 'font-inter text-base px-8 ml-1 py-1 bg-yellow-400 rounded-md font-bold'
+                            : 'font-inter text-base hover:text-yellow-500 font-bold ml-4'
+                        }
+                        onClick={handleLinkClick}
+                      >
+                        Airport Transfers
+                      </NavLink>
+                    </li>
+                    <li className='my-4'>
+                      <NavLink
+                        to="/local-rides"
+                        className={({ isActive }) =>
+                          isActive
+                            ? 'font-inter text-base px-8 ml-1 py-1 bg-yellow-400 rounded-md font-bold'
+                            : 'font-inter text-base hover:text-yellow-500 font-bold ml-4'
+                        }
+                        onClick={handleLinkClick}
+                      >
+                        Local Rides
+                      </NavLink>
+                    </li>
+                    <li className='my-4'>
+                      <NavLink
+                        to="/special-events"
+                        className={({ isActive }) =>
+                          isActive
+                            ? 'font-inter text-base px-8 ml-1 py-1 bg-yellow-400 rounded-md font-bold'
+                            : 'font-inter text-base hover:text-yellow-500 font-bold ml-4'
+                        }
+                        onClick={handleLinkClick}
+                      >
+                        Special Events
+                      </NavLink>
+                    </li>
+                  </ul>
+                )}
+              </li>
+
+              <li>
+                <NavLink
+                  to="/contact-us"
+                  className={({ isActive }) =>
+                    isActive
+                      ? 'font-inter text-base px-3 py-1 bg-yellow-400 rounded-md font-bold'
+                      : 'font-inter text-base hover:text-yellow-700 font-bold'
+                  }
+                  onClick={handleLinkClick}
+                >
+                  Contact Us
+                </NavLink>
               </li>
               <div className="flex items-center gap-[20px]">
-                {/* <CiSearch className='text-[1.5rem] cursor-pointer' /> */}
-                <button className="py-2.5 px-6 border border-yellow-400 text-black rounded-tr-[30px] rounded-bl-[30px] hover:bg-yellow-400 hover:text-black font-bold transition-all duration-200">
-          Book Now
-        </button>
+                <a href="tel:+4407783664574">
+                  <button className="py-2.5 px-6 border border-yellow-400 text-black rounded-tr-[30px] rounded-bl-[30px] hover:bg-yellow-400 hover:text-black font-bold transition-all duration-200">
+                    Book Now
+                  </button>
+                </a>
               </div>
             </ul>
           </div>

@@ -133,9 +133,12 @@ const Navbar = () => {
 
         </ul>
 
-        <button className="py-2.5 px-6 border border-yellow-400 text-black rounded-tr-[30px] rounded-bl-[30px] hover:bg-yellow-400 hover:text-black font-bold transition-all duration-200">
-          Book Now
-        </button>
+        <a href="tel:+4407783664574">
+  <button className="py-2.5 px-6 border border-yellow-400 text-black rounded-tr-[30px] rounded-bl-[30px] hover:bg-yellow-400 hover:text-black font-bold transition-all duration-200">
+    Book Now
+  </button>
+</a>
+
       </nav>
     </div>
   );
