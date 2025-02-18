@@ -1,7 +1,7 @@
 
 import { FaLongArrowAltRight } from 'react-icons/fa';
 import bg from '../../../../public/AirportTranser/banner.png'
-import { MdAddCall } from 'react-icons/md';
+
 const AirportTranserBanner = () => {
     return (
         <div style={{

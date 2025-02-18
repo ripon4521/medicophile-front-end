@@ -42,9 +42,12 @@ export function Testimonial() {
     />
     <div className="flex flex-col">
       <h6 className="text-base font-semibold hover:text-yellow-500 transition-colors duration-300">
-        Sarah J.
+    
       </h6>
-      <p className="text-sm text-gray-500">CEO/ Chairman</p>
+ 
+      <h6 className="text-base text-center mt-4 font-semibold hover:text-yellow-400 transition-colors duration-300">
+      Sarah J.       John K.
+      </h6>
     </div>
   </div>
   <p className="mb-4 text-sm text-gray-500 hover:text-gray-700 transition-colors duration-300">
@@ -77,10 +80,10 @@ export function Testimonial() {
       className="mr-4 inline-block h-16 w-16 object-cover rounded-full hover:scale-110 transform transition-transform duration-300"
     />
     <div className="flex flex-col">
-      <h6 className="text-base font-semibold hover:text-yellow-400 transition-colors duration-300">
-        John K.
+    
+      <h6 className="text-base text-center mt-4 font-semibold hover:text-yellow-400 transition-colors duration-300">
+      John K.        John K.
       </h6>
-      <p className="text-sm text-gray-500">CEO/ Chairman</p>
     </div>
   </div>
   <p className="mb-4 text-sm text-gray-500 hover:text-gray-700 transition-colors duration-300">
@@ -111,10 +114,11 @@ export function Testimonial() {
       className="mr-4 inline-block h-16 w-16 object-cover rounded-full hover:scale-110 transform transition-transform duration-300"
     />
     <div className="flex flex-col">
-      <h6 className="text-base font-semibold hover:text-yellow-400 transition-colors duration-300">
-        Priya M.
+     
+   
+      <h6 className="text-base text-center mt-4 font-semibold hover:text-yellow-400 transition-colors duration-300">
+      Priya M.
       </h6>
-      <p className="text-sm text-gray-500">Operations Manager, Horizon Ltd.</p>
     </div>
   </div>
   <p className="mb-4 text-sm text-gray-500 hover:text-gray-700 transition-colors duration-300">
@@ -145,10 +149,11 @@ export function Testimonial() {
       className="mr-4 inline-block h-16 w-16 object-cover rounded-full hover:scale-110 transform transition-transform duration-300"
     />
     <div className="flex flex-col">
-      <h6 className="text-base font-semibold hover:text-yellow-400 transition-colors duration-300">
-        Emily R.
+   
+
+      <h6 className="text-base text-center mt-4 font-semibold hover:text-yellow-400 transition-colors duration-300">
+      Emily R.
       </h6>
-      <p className="text-sm text-gray-500">CEO/ Chairman</p>
     </div>
   </div>
   <p className="mb-4 text-sm text-gray-500 hover:text-gray-700 transition-colors duration-300">
@@ -179,10 +184,11 @@ export function Testimonial() {
       className="mr-4 inline-block h-16 w-16 object-cover rounded-full hover:scale-110 transform transition-transform duration-300"
     />
     <div className="flex flex-col">
-      <h6 className="text-base font-semibold hover:text-yellow-400 transition-colors duration-300">
-        Ahmed R.
+      
+
+      <h6 className="text-base text-center mt-4 font-semibold hover:text-yellow-400 transition-colors duration-300">
+      Ahmed R.
       </h6>
-      <p className="text-sm text-gray-500">Chairman, Bengal Exports</p>
     </div>
   </div>
   <p className="mb-4 text-sm text-gray-500 hover:text-gray-700 transition-colors duration-300">
@@ -213,10 +219,10 @@ export function Testimonial() {
       className="mr-4 inline-block h-16 w-16 object-cover rounded-full hover:scale-110 transform transition-transform duration-300"
     />
     <div className="flex flex-col">
-      <h6 className="text-base font-semibold hover:text-yellow-400 transition-colors duration-300">
+      <h6 className="text-base text-center mt-4 font-semibold hover:text-yellow-400 transition-colors duration-300">
         David James
       </h6>
-      <p className="text-sm text-gray-500">CEO/ Chairman</p>
+   
     </div>
   </div>
   <p className="mb-4 text-sm text-gray-500 hover:text-gray-700 transition-colors duration-300">

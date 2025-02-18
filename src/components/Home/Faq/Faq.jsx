@@ -27,10 +27,27 @@ const Faq = () => {
     },
     {
       question: 'What areas do you serve?',
-      answer: 'We serve all of Pembrokeshire, including popular destinations like Tenby, Haverfordwest,  and St Davids.',
+      answer: (
+        <ul className="list-disc pl-5 mt-2 text-sm sm:text-base">
+          <li>Cosheston</li>
+          <li>Pembroke</li>
+          <li>Pembroke Dock</li>
+          <li>Tenby</li>
+          <li>Saundersfoot</li>
+          <li>Manorbier</li>
+          <li>Carew</li>
+          <li>Bluestone Resort</li>
+          <li>Narberth</li>
+          <li>Kilgetty</li>
+          <li>Milford Haven</li>
+          <li>Haverfordwest</li>
+          <li>Angle</li>
+          <li>Pembrokeshire Coast Path</li>
+        </ul>
+      ),
     },
   ];
-
+  
   return (
   <div className='bg-gray-100 '>
       <section className="py-10 md:py-10 mx-auto w-full max-w-7xl px-5 md:px-10 ">

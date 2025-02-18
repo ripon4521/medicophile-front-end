@@ -4,7 +4,7 @@ import { FcApproval } from "react-icons/fc";
 const WhyChoseOurTaxiService = () => {
     return (
         <div data-aos="fade-up"
-        data-aos-duration="2000" className="max-w-6xl mx-auto pt-5 md:mt-36 px-2 ">
+        data-aos-duration="2000" className="max-w-6xl mx-auto pt-5  px-2 ">
             <h1 className="text-4xl font-bold drop-shadow-md ">Why Choose Our <span className="text-yellow-400">Airport Transfer</span> Service?</h1>
          <div data-aos="fade-up"
                                        data-aos-duration="2000" className="">
