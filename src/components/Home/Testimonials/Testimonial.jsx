@@ -34,12 +34,8 @@ export function Testimonial() {
   data-aos-duration="2000"
   className="relative mb-6 gap-6 overflow-hidden rounded-2xl border border-gray-300 bg-white p-8 transition-all duration-300 hover:border-4 hover:border-yellow-500"
 >
-  <div className="mb-4 flex flex-row">
-    <img
-      src={man1}
-      alt="man1"
-      className="mr-4 inline-block h-16 w-16 object-cover rounded-full hover:scale-110 transform transition-transform duration-300"
-    />
+  <div className=" flex flex-row">
+ 
     <div className="flex flex-col">
       <h6 className="text-base font-semibold hover:text-yellow-500 transition-colors duration-300">
     
@@ -73,12 +69,8 @@ export function Testimonial() {
   data-aos-duration="2000"
   className="relative mb-6 gap-6 overflow-hidden rounded-2xl border border-solid border-gray-300 bg-white p-8 transition-all duration-300 hover:border-4 hover:border-yellow-500"
 >
-  <div className="mb-4 flex flex-row">
-    <img
-      src={man2}
-      alt="man2"
-      className="mr-4 inline-block h-16 w-16 object-cover rounded-full hover:scale-110 transform transition-transform duration-300"
-    />
+  <div className=" flex flex-row">
+  
     <div className="flex flex-col">
     
       <h6 className="text-base text-center mt-4 font-semibold hover:text-yellow-400 transition-colors duration-300">
@@ -107,12 +99,8 @@ export function Testimonial() {
   data-aos-duration="2000"
   className="relative mb-6 gap-6 overflow-hidden rounded-2xl border border-solid border-gray-300 bg-white p-8 transition-all duration-300 hover:border-4 hover:border-yellow-500 hover:shadow-lg hover:scale-105"
 >
-  <div className="mb-4 flex flex-row">
-    <img
-      src={women1}
-      alt=""
-      className="mr-4 inline-block h-16 w-16 object-cover rounded-full hover:scale-110 transform transition-transform duration-300"
-    />
+  <div className=" flex flex-row">
+ 
     <div className="flex flex-col">
      
    
@@ -142,12 +130,8 @@ export function Testimonial() {
   data-aos-duration="2000"
   className="relative mb-6 gap-6 overflow-hidden rounded-2xl border border-solid border-gray-300 bg-white p-8 transition-all duration-300 hover:border-4 hover:border-yellow-500 hover:shadow-lg hover:scale-105"
 >
-  <div className="mb-4 flex flex-row">
-    <img
-      src={women2}
-      alt=""
-      className="mr-4 inline-block h-16 w-16 object-cover rounded-full hover:scale-110 transform transition-transform duration-300"
-    />
+  <div className="flex flex-row">
+ 
     <div className="flex flex-col">
    
 
@@ -177,12 +161,8 @@ export function Testimonial() {
   data-aos-duration="2000"
   className="relative mb-6 gap-6 overflow-hidden rounded-2xl border border-solid border-gray-300 bg-white p-8 transition-all duration-300 hover:border-4 hover:border-yellow-500 hover:shadow-lg hover:scale-105"
 >
-  <div className="mb-4 flex flex-row">
-    <img
-      src={man3}
-      alt=""
-      className="mr-4 inline-block h-16 w-16 object-cover rounded-full hover:scale-110 transform transition-transform duration-300"
-    />
+  <div className="flex flex-row">
+  
     <div className="flex flex-col">
       
 
@@ -212,12 +192,8 @@ export function Testimonial() {
   data-aos-duration="2000"
   className="relative mb-6 gap-6 overflow-hidden rounded-2xl border border-solid border-gray-300 bg-white p-8 transition-all duration-300 hover:border-4 hover:border-yellow-500 hover:shadow-lg hover:scale-105"
 >
-  <div className="mb-4 flex flex-row">
-    <img
-      src={man1}
-      alt=""
-      className="mr-4 inline-block h-16 w-16 object-cover rounded-full hover:scale-110 transform transition-transform duration-300"
-    />
+  <div className=" flex flex-row">
+   
     <div className="flex flex-col">
       <h6 className="text-base text-center mt-4 font-semibold hover:text-yellow-400 transition-colors duration-300">
         David James

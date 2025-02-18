@@ -32,7 +32,7 @@ const AboutUs = () => {
      data-aos-duration="2000"  className="font-semibold  md:text-xl uppercase text-yellow-400">About Us</p>
 
                 <h1 data-aos="fade-up"
-     data-aos-duration="2000" className="md:text-5xl text-4xl my-2 font-bold drop-shadow-md">We Provide Trusted <span className="text-[#FFB329]">Cab Service</span> In The Pembrokeshire</h1>
+     data-aos-duration="2000" className="md:text-5xl text-4xl my-2 font-bold drop-shadow-md">We Provide Trusted <span className="text-[#FFB329]">Cab Service</span> In  Pembrokeshire</h1>
                 <p data-aos="fade-up"
      data-aos-duration="2000" className="text-gray-600 dro">MD Taxi is here to provide safe, comfortable, and efficient rides. Book your journey today and discover the MD Taxi difference!
 </p>

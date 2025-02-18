@@ -37,10 +37,20 @@ const Banner = () => {
      data-aos-duration="1000"
      data-aos-easing="ease-in-sine"  style={{ fontFamily: 'Rancho, serif' }} className=" text-xl lg:text-5xl md:text-4xl flex text-center justify-center items-center gap-2 drop-shadow-md"><MdAddCall/>Call Now: <span className="text-yellow-400">(+44) 07783664574</span> </h1>
  
-      <p data-aos="zoom-in"  data-aos-duration="1000" className="md:mb-5 mb-2 mt-2 max-w-4xl  mx-auto drop-shadow-md lg:text-xl md:text-[20px] text-xs  text-white">
-      MD Taxi Your trusted transportation partner in the beautiful Pembrokeshire region! Whether you need a quick ride to the local shops, a scenic journey to a coastal destination, or a reliable airport transfer!!
+ <p 
+  data-aos="zoom-in"  
+  data-aos-duration="1000" 
+  className="md:mb-5 mb-2 mt-2 max-w-4xl mx-auto drop-shadow-md lg:text-xl md:text-[20px] text-xs text-white"
+>
+  MD Taxi – Your trusted transportation partner in the beautiful Pembrokeshire region!  
+  Whether you need a quick ride to the local shops, a scenic journey to a coastal destination, or a reliable airport transfer, we've got you covered. We proudly serve: 
+   <span className=" font-semibold"> 
+     Pembroke, Pembroke Dock, Tenby, Saundersfoot, Carew, Kilgetty, Neyland, Haverfordwest, Pennar, Milford Haven.
+  </span>
+</p>
 
-      </p>
+
+
       <div data-aos="fade-up"
      data-aos-duration="2000" className="flex items-center  drop-shadow-md justify-center">
           {/* <CiSearch className="text-[1.5rem] cursor-pointer" /> */}
