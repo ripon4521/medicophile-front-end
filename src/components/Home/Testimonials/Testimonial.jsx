@@ -42,7 +42,7 @@ export function Testimonial() {
       </h6>
  
       <h6 className="text-base text-center mt-4 font-semibold hover:text-yellow-400 transition-colors duration-300">
-      Sarah J.       John K.
+      Sarah J.
       </h6>
     </div>
   </div>
@@ -74,7 +74,7 @@ export function Testimonial() {
     <div className="flex flex-col">
     
       <h6 className="text-base text-center mt-4 font-semibold hover:text-yellow-400 transition-colors duration-300">
-      John K.        John K.
+      John K. 
       </h6>
     </div>
   </div>

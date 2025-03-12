@@ -6,7 +6,8 @@ import OurServices from "../../components/Home/OurServices/OurServices";
 import { Testimonial } from "../../components/Home/Testimonials/Testimonial";
 // import TestimonnialSlider from "../../components/Home/Testimonials/TestimonnialSlider";
 import WhyChoseUs from "../../components/Home/WhyChoseUs/WhyChoseUs";
-import Footer from "../../Shared/Footer";
+import TimeTable from "../../components/TimeTable/TimeTable";
+
 
 
 
@@ -16,6 +17,7 @@ const Home = () => {
         <div>
             <Banner/>
             <BookingFrom/>
+            <TimeTable/>
             <OurServices/> 
             <AboutUs/>
        <WhyChoseUs/>
